@@ -119,7 +119,7 @@ namespace HammerBitcoin
         * 
         * If a valid amount is entered, the available cash is reduced accordingly.
         */
-        private void BuyComputers()
+        private void    BuyComputers()
         {
             int computersToBuy;
             string question = "How many computers will you buy? ";
