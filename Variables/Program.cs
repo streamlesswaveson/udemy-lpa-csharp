@@ -14,7 +14,7 @@ namespace Variables
             // 'var' will infer the type
             var subtraction = random.Next(2,10);
 
-            int answer;
+            var answer = firstNumber * secondNumber - subtraction;
             string prompt = ". Press ENTER when ready";
             Console.WriteLine("think of a number between 1-10" + prompt);
             Console.ReadKey();
@@ -27,7 +27,6 @@ namespace Variables
             Console.WriteLine("Now subtract " + subtraction + prompt);
             Console.ReadKey();
 
-            answer = firstNumber * secondNumber - subtraction;
             Console.WriteLine("the answer is " + answer);
 
                 }
