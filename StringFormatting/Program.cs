@@ -20,9 +20,20 @@ namespace StringFormatting
             const int  col1Space = -12;
             const int col2Space = 8;
             const int col3Space = 6;
+
+            // The ':C' is a currency formatter
             Console.WriteLine($"{col1Heading, col1Space} {col2Heading, col2Space} {col3Heading, col3Space}");
-            Console.WriteLine($"{apples, col1Space} {appleQuantity, col2Space} {applePrice, col3Space}");
-            Console.WriteLine($"{oranges, col1Space} {orangeQuantity, col2Space} {orangePrice, col3Space}");
-                }
+            Console.WriteLine($"{apples, col1Space} {appleQuantity, col2Space} {applePrice/100.0, col3Space:C}");
+            Console.WriteLine($"{oranges, col1Space} {orangeQuantity, col2Space} {orangePrice/100.0, col3Space:C}");
+
+            Console.WriteLine($"Math.PI={Math.PI}");
+
+            Console.WriteLine($"Math.PI={Math.PI:F3}");
+            Console.WriteLine($"Math.PI={Math.PI:F0}");
+
+            Console.WriteLine($"Math.PI={Math.PI:F12}");
+            Console.WriteLine($"Math.PI={Math.PI:F99}");
+
+        }
     }
 }
